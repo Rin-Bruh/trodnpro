@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Sidebar Menu with sub-menu | CodingNepal</title>
+      <link rel="stylesheet" href="css/style.css">
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+      <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+   </head>
+   <body>
+      <nav class="sidebar">
+         <div class="text">
+          <a href="manage.html" style="color: #fff;">TroDNPro.</a>
+         </div>
+         <ul>
+            <li><a href="manage.html">Bảng điều khiển</a></li>
+            <li>
+               <a href="#" class="feat-btn">Phòng trọ
+               <span class="fas fa-caret-down first"></span>
+               </a>
+               <ul class="feat-show">
+                  <li><a href="table-data-phongtro.html">Danh sách phòng</a></li>
+                  <li><a href="form-add-phongtro.html">Thêm phòng</a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="#" class="serv-btn">Khách
+               <span class="fas fa-caret-down second"></span>
+               </a>
+               <ul class="serv-show">
+                <li><a href="table-data-khach.html">Danh sách thuê</a></li>
+                <li><a href="form-add-khach.html">Thêm khách thuê</a></li>
+               </ul>
+            </li>
+            <li class="active"><a href="table-data-hopdong.html">Hợp đồng thuê trọ</a></li>
+         </ul>
+      </nav>
+      <div class="main-content">
+        <header>
+            <div class="social-icons">
+                
+                <div></div>
+                </span>
+            </div>
+        </header> 
+      </div>
+      <main class="app-content">
+        <div class="app-title">
+          <ul class="app-breadcrumb breadcrumb side">
+            <li class="breadcrumb-item active"><a href="table-data-hopdong.html"><b>Danh sách hợp đồng</b></a></li>
+          </ul>
+          <div id="clock"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="tile">
+              <div class="tile-body">
+                <div class="row element-button">
+                  <div class="col-sm-2">
+    
+                    <a class="btn btn-add btn-sm" href="form-add-hopdong.html" title="Thêm"><i class="fas fa-plus"></i>
+                      Tạo mới hợp đồng</a>
+                  </div>                 
+                  <div class="col-sm-2">
+                    <a class="btn btn-delete btn-sm" type="button" title="Xóa" onclick="myFunction(this)"><i
+                        class="fas fa-trash-alt"></i> Xóa tất cả </a>
+                  </div>
+                </div>
+                <table class="table table-hover table-bordered" id="sampleTable">
+                  <thead>
+                    <tr>
+                      <th width="20"><input type="checkbox" id="all"></th>
+                      <th width="20">STT</th>
+                      <th>Tên người thuê</th>
+                      <th width="200">Ngày tạo</th>                  
+                      <th width="150">Tình trạng</th>
+                      <th width="70">Chi tiết</th>
+                      <th width="100">Tính năng</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td width="10"><input type="checkbox" name="check1" value="1"></td>
+                      <td>1</td>
+                      <td>Triệu Thanh Phú</td>
+                      <td>13/7/2022</td>
+                      <td><span class="badge bg-success">Còn thuê</span></td>
+                      <td><a href="">Mở</a></td>
+                      <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i> </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="10"><input type="checkbox" name="check1" value="1"></td>
+                        <td>2</td>
+                      <td>Nguyễn Thị Ngọc Cẩm</td>
+                      <td>13/7/2022</td>
+                      <td><span class="badge bg-success">Còn thuê</span></td>
+                      <td><a href="">Mở</a></td>
+                      <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i> </button>
+                        </td>
+                      </tr>
+                    <tr>
+                      <td width="10"><input type="checkbox" name="check1" value="1"></td>
+                      <td>3</td>
+                      <td>Đặng Hoàng Phúc</td>
+                      <td>13/7/2022</td>
+                      <td><span class="badge bg-success">Còn thuê</span></td>
+                      <td><a href="">Mở</a></td>
+                      <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i> </button>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td width="10"><input type="checkbox" name="check1" value="1"></td>
+                      <td>4</td>
+                      <td>Nguyễn Thị Mỹ Yến</td>
+                      <td>13/7/2022</td>
+                      <td><span class="badge bg-success">Còn thuê</span></td>
+                      <td><a href="">Mở</a></td>
+                      <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i> </button>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td width="10"><input type="checkbox" name="check1" value="1"></td>
+                      <td>5</td>
+                      <td>Phạm Thị Ngọc</td>
+                      <td>13/7/2022</td>
+                      <td><span class="badge bg-success">Còn thuê</span></td>
+                      <td><a href="">Mở</a></td>
+                      <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i> </button>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td width="10"><input type="checkbox" name="check1" value="1"></td>
+                      <td>6</td>
+                      <td>Ngô Thái An</td>
+                      <td>13/7/2022</td>
+                      <td><span class="badge bg-success">Còn thuê</span></td>
+                      <td><a href="">Mở</a></td>
+                      <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"><i class="fas fa-trash-alt"></i> </button>
+                        </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Essential javascripts for application to work-->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="src/jquery.table2excel.js"></script>
+  <script src="js/main.js"></script>
+  <!-- The javascript plugin to display page loading on top-->
+  <script src="js/plugins/pace.min.js"></script>
+  <!-- Page specific javascripts-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+  <!-- Data table plugin-->
+  <script type="text/javascript" src="js/plugins/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="js/plugins/dataTables.bootstrap.min.js"></script>
+  <script type="text/javascript">$('#sampleTable').DataTable();</script>
+ 
+    
+      <script>
+         
+           $('.feat-btn').click(function(){
+             $('nav ul .feat-show').toggleClass("show");
+             $('nav ul .first').toggleClass("rotate");
+           });
+           $('.serv-btn').click(function(){
+             $('nav ul .serv-show').toggleClass("show1");
+             $('nav ul .second').toggleClass("rotate");
+           });
+           $('nav ul li').click(function(){
+             $(this).addClass("active").siblings().removeClass("active");
+           });
+      </script>
+   </body>
+</html>

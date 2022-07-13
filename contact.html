@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact.</title>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="CSS/contact.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  
+</head>
+
+<body class="body">
+  <main>
+    <header>
+      <div class="flex container">
+        <a id="logo" href="index.html">TroDNPro.</a>
+        <nav>
+          <button id="nav-toggle" class="hamburger-menu">
+            <span class="strip"></span>
+            <span class="strip"></span>
+            <span class="strip"></span>
+          </button>
+
+          <ul id="nav-menu">
+            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="properties.html" class="active">Cho Thuê Phòng Trọ</a></li>
+            <li><a href="aboutus.html">Về chúng tôi</a></li>
+            <li><a href="contact.html" style="color: #f69314;">Liên Hệ</a></li>
+            <li><a href="admin/manage.html">Quản lý phòng trọ</a></li>
+            <li id="close-flyout"><span class="fas fa-times"></span></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Liên hệ hỗ trợ</h2>
+
+        <div class="flex">
+          <div id="form-container">
+            <h3><b>Liên hệ trực tuyến</b></h3>
+            <form onsubmit="sendEmail(); reset(); return false;">
+              <label>Tên của bạn <span id="nc">*</span></label>
+              <input type="text" id="name" required />
+
+              <label>Email <span id="nc">*</span></label>
+              <input type="email" id="email" required />
+
+              <label>Điện thoại</label>
+              <input type="text" id="subject" />
+
+              <label>Nội dung liên hệ <span id="nc">*</span></label>
+              <textarea id="content" cols="30" rows="10" placeholder="Viết nội dung của bạn ở đây..."
+                required></textarea>
+
+              <button class="rounded" type="submit">Gửi liên hệ</button>
+            </form>
+          </div>
+          <!-- onclick="ktrlienhe()" -->
+          <div id="address-container">
+            <label>Địa chỉ</label>
+            <address>
+              Trường Đại học Công Nghệ Thông Tin và Truyền Thông Việt - Hàn 
+            </address>
+
+            <label>Hotline</label>
+            <a href="#">0901808303</a>
+
+            <label>Email</label>
+            <a href="#">quytt.21it@vku.udn.vn</a>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3202.2563979966894!2d108.25172750292859!3d15.974872205920308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142108997dc971f%3A0x1295cb3d313469c9!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiB2w6AgVHJ1eeG7gW4gdGjDtG5nIFZp4buHdCAtIEjDoG4!5e0!3m2!1svi!2s!4v1657295956901!5m2!1svi!2s"class="mapct" width="100%" height="260px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                       
+            <!-- <img src="images/lienlac2.png" style="width: 150%; margin-top: 1rem; margin-left: -3.5rem; border-radius: 4px;"> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="flex container">
+        <div class="footer-about">
+          <h5 style="font-size: 18px;">Tại sao lại chọn TroDNPro.com?</h5>
+          <p>Chúng tôi biết bạn có rất nhiều lựa chọn, nhưng TroDNPro.com tự hào là trang web đứng top google về các từ
+            khóa: cho thuê phòng trọ, nhà trọ, thuê nhà nguyên căn, cho thuê căn hộ, tìm người ở ghép, cho thuê mặt
+            bằng...
+            Vì vậy tin của bạn đăng trên website sẽ tiếp cận được với nhiều khách hàng hơn, do đó giao dịch nhanh hơn,
+            tiết kiệm chi phí hơn.</p>
+        </div>
+
+        <div class="footer-quick-links">
+          <h5 style="font-size: 18px;">Đường dẫn</h5>
+          <ul>
+            <li><a href="aboutus.html">Về Chúng Tôi</a></li>
+            <li><a href="properties.html">Cho Thuê Phòng Trọ</a></li>
+            <li><a href="#">Chính Sách Bảo Mật</a></li>
+            <li><a href="contact.html">Liên Hệ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-subscribe">
+          <h5 style="font-size: 18px;">Theo dõi bản tin của chúng tôi</h5>
+          <div id="subscribe-container">
+            <input type="text" placeholder="Nhập Email" />
+            <button class="right-rounded">Gửi</button>
+          </div>
+
+          <h5 class="follow-us" style="font-size: 18px;">Theo dõi chúng tôi</h5>
+          <ul>
+            <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+            <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <small>
+        Copyright &copy; 2022 All rights reserved | TroDNPro.
+      </small>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+       function sendEmail() {
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          // Port: "2525",
+          Username: "truongquy167@gmail.com",
+          Password: "7689BFE83F7808BD9640DA0907908FB61B24",
+          From: document.getElementById("email").value,
+          To: 'truongquy167@gmail.com',
+          Subject: "Test email",
+          Body: "Name: " + document.getElementById("name").value
+        }).then(
+          message => alert(message)
+        );
+      }
+    </script>
+</body>
+<script src="js/script.js"></script>
+
+</script>
+
+</html>

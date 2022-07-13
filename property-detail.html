@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Núi Thành.</title>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link href="css/property-detail.css" type="text/css" rel="Stylesheet" />
+  <link href="css/w3.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body class="body">
+  <main>
+    <header>
+      <div class="flex container">
+        <a id="logo" href="index.html">TroDNPro.</a>
+        <nav>
+          <button id="nav-toggle" class="hamburger-menu">
+            <span class="strip"></span>
+            <span class="strip"></span>
+            <span class="strip"></span>
+          </button>
+
+          <ul id="nav-menu">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="properties.html" class="active">Cho thuê phòng trọ</a></li>
+            <li><a href="aboutus.html">Về chúng tôi</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+            <li><a href="admin/manage.html">Quản lý phòng trọ</a></li>
+            <li id="close-flyout"><span class="fas fa-times"></span></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="main-property">
+      <div id="property-details" class="flex container">
+        <div class="address-container flex">
+          <div class="home-icon">
+            <span class="fa fa-home"></span>
+          </div>
+          <div>
+            <address>
+              <strong>Núi Thành</strong>
+              <small> Hòa Cường Nam Hải Châu Đà Nẵng</small>
+            </address>
+            <small class="status"><span class="for-sale"></span> Còn Phòng</small>
+          </div>
+          <small class="year-built-sm"></small>
+        </div>
+
+        <div class="property-stats-container flex">
+          <div class="price">
+            <div class="padded-inner-container">
+              <small>Giá Thuê</small>
+              <strong>2 triệu/tháng</strong>
+            </div>
+          </div>
+          <div class="beds">
+            <div class="padded-inner-container">
+              <small>Gác Lửng</small>
+              <strong>Có</strong>
+            </div>
+          </div>
+          <div class="baths">
+            <div class="padded-inner-container">
+              <small>Diện Tích</small>
+              <strong>30m²</strong>       
+            </div>
+          </div>
+          <div class="sqft">
+            <div class="padded-inner-container">
+              <!-- <strong>2,600 <small>Sq. Ft.</small></strong>
+              <small>$473 / Sq. Ft.</small> -->
+            </div>
+          </div>
+          <small class="year-built">Phòng sạch, thoáng mát - Yêu cầu: Giữ vệ sinh chung</small>
+        </div>
+
+        <div class="actions-container flex">
+          <div class="favorite">
+            <button><span class="fa fa-heart"></span></button>
+            <small>Yêu Thích</small>
+          </div>
+          <div class="share">
+            <button><span class="fa fa-share"></span></button>
+            <small>Chia Sẻ</small>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Start: image slider -->
+      <div id="property-image-slider" class="slick">
+        <div>
+          <img src="images/properties-img-0-1.jpg" alt="Property Image 1" />
+        </div>
+        <div>
+          <img src="images/properties-img-0-2.jpg" alt="Property Image 2" />
+        </div>
+        <div>
+          <img src="images/properties-img-0-3.jpg" alt="Property Image 3" />
+        </div>
+        <div>
+          <img src="images/properties-img-0-4.jpg" alt="Property Image 4" />
+        </div>
+        <div>
+          <img src="images/properties-img-0-5.jpg" alt="Property Image 5" />
+        </div>
+      </div>
+      <!-- End: image slider -->
+
+      <!-- Start: map -->
+      <!--  -->
+      
+      <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.6123784627544!2d108.22258039362883!3d16.033681329002285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219e9dea8059d%3A0xe386caa61e07e9dd!2zTsO6aSBUaMOgbmgsIEjDsmEgQ8aw4budbmcgTmFtLCBI4bqjaSBDaMOidSwgxJDDoCBO4bq1bmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1653930714471!5m2!1svi!2s" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <!-- End: map -->
+
+      <!-- Start: street view -->
+      
+      <div id="street">
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1654007173799!6m8!1m7!1sCAoSLEFGMVFpcE5hUTBneTYwNTd5UDk2LXJQMGVTVWdROVdFd0t6ajB1cl90eGNr!2m2!1d16.0331421!2d108.2227554!3f175.48987284502587!4f17.34228188520325!5f0.7820865974627469" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <!-- End: street view -->
+
+      <div class="slider-options-container flex">
+        <a id="image-view" href="javascript:;">
+          <div class="image-fade"><span>Ảnh</span></div>
+          <img src="images/image-view.jpg" alt="Show Images" />
+        </a>
+
+        <a id="map-view" href="javascript:;">
+          <div class="image-fade"><span>Bản Đồ</span></div>
+          <img src="images/map3-view.jpg" alt="Show Map View" />
+        </a>
+
+        <a id="street-view" href="javascript:;">
+          <div class="image-fade"><span>View Đường</span></div>
+          <img src="images/street-view.jpg" alt="Show Street View" />
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <section id="property-description">
+    <div class="flex container">
+      <div class="description">
+        <h3>Thông tin mô tả</h3>
+        <p>
+            PHÒNG TRỌ HIỆN VẪN CÒN PHÒNG ( giá mùa covid ) <br>
+
+            Địa chỉ bên hong trường đại học kiến trúc chỉ cách một phút đi bộ <br>
+            
+            Diện tích 30m2 , có gác lửng <br>
+            
+            Ví trí thuận lợi sát cạnh hai trường đại học Kiến Trúc và Đông Á Chỗ để xe rộng rãi , thoáng mát có camera an ninh <br>
+            
+            Có thể ở ghép tùy ý các bạn <br>
+            
+            Khu dân trí cao , yên tĩnh rất phù hợp với các bạn sinh viên ****YÊU CẦU**** <br>
+            
+            ️Giữ vệ sinh chung , và không ảnh hưởng đến các bạn xung quanh Các bạn quan tâm có thể gọi điện hoặc zalo cho mình qua : 0933424057 <br>
+            
+            CÁM ƠN MỌI NGƯỜI <br>
+        </p>
+      </div>
+
+      <div class="listed-by-container">
+        <h3>Liên hệ</h3>
+        <img src="images/listing-agent.jpg" alt="Listing Agent Stuart Redman" />
+        <div>
+          <a href="#">Lê Trí</a>
+          <small>Chủ trọ</small>
+        </div>
+        <button id="ask-a-question">0933424057</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="property-info" class="container">
+    <div class="price-insights">
+      <h3>Đặc điểm tin đăng</h3>
+      <div class="flex">
+        <div>
+          <label>Mã tin</label>
+          <strong>#599039</strong>
+        </div>
+
+        <div>
+          <label>Khu vực</label>
+          <strong>Quận Hải Châu</strong>
+        </div>
+
+        <div>
+            <label>Ngày đăng</label>
+            <strong>Thứ 4, 11:15 13/04/2022</strong>
+        </div>
+
+        <div>
+          <label>Đối tượng thuê</label>
+          <strong>Tất cả</strong>
+        </div>
+
+        <div id="dc" style="flex: 0 1 100%;">
+            <label>Địa chỉ</label>
+            <strong>Núi Thành, Phường Hòa Cường Nam, Quận Hải Châu, Đà Nẵng</strong>
+        </div>
+  
+      </div>
+    </div>
+
+    <div class="home-facts">
+      <h3>Thông tin liên hệ</h3>
+      <div class="flex">
+        <div>
+          <label>Liên hệ</label>
+          <strong>Lê Trí</strong>
+        </div>
+
+        <div>
+          <label>Điện thoại</label>
+          <strong>0933424057</strong>
+        </div>
+
+        <div>
+          <label>Zalo</label>
+          <strong>0933424057</strong>
+        </div>
+        
+        <div>
+          <label>Facebook</label>
+          <strong>Facebook.com</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="embedded-map">
+    <div id="google-maps"></div>
+  </section>
+
+  
+
+  <section id="property-info-details">
+    <div class="container">
+      
+
+      <div class="flex main-details">
+        
+      </div>
+
+      <h3>Vị Trí Gần</h3>
+      <div class="flex">
+        <div>
+          <strong>Đại Học, Cao Đẳng</strong>
+          <ul>
+            <li>ĐH Kiến Trúc Đà Nẵng: 200m</li>
+            <li>ĐH Đông Á: 300m</li>
+            <li>CĐ Thương Mại: 1.5km</li>
+          </ul>
+        </div>
+
+        <div>
+          <strong>Siêu Thị</strong>
+          <ul>
+            <li>Siêu Thị VietMart: 7m</li>
+            <li>Siêu Thị FuMart số 4: 124m</li>
+            <li>VinMart+: 112m</li>
+          </ul>
+        </div>
+
+        <div>
+          <strong>Bệnh Viện</strong>
+          <ul>
+            <li>Trạm Y Tế Hòa Cường Bắc: 1.44km</li>
+            <li>Bệnh Viện Đa Khoa Tâm Trí: 1.87km</li>
+            <li>Bện Viện Đa Khoa Quốc Tế: 2.33km</li>
+          </ul>
+        </div>
+
+        <div>
+          <strong>Chợ</strong>
+          <ul>
+            <li>Chợ Đầu Mối Hóa Cường: 809m</li>
+          </ul>
+        </div>
+
+        <div>
+          <strong>Công Viên</strong>
+          <ul>
+            <li>Công Viên Tiên Sơn: 549m</li>
+            <li>Công Viên Núi Thành: 340m</li>
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+  </section>
+
+  <section id="nearby-similar-homes">
+    <div class="container">
+      <h2>Có Thể Bạn Quan Tâm</h2>
+      <div id="properties-slider" class="slick">
+        <a href="#">
+          <img src="images/anh7.jpg" alt="Property 1" class="imgFill productImg"/>
+                    <div class="property-details">
+                        <p class="price">4.5 triệu/tháng <span class="price" style="padding-left: 15px;">#600787</span></p>
+                        <span class="beds">20m²</span>
+                        <!-- <span class="baths">#600787</span> -->
+                        <span class="sqft" style="color: #f69314;"><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i></span>
+                        <address>
+                            Lâm Hoành, Phường Phước Mỹ, Quận Sơn Trà, Đà Nẵng
+                        </address>
+                        
+                    </div>
+        </a>
+
+        <a href="#">
+          <img src="images/anh6.jpg" alt="Property 1" class="imgFill productImg"/>
+                    <div class="property-details">
+                        <p class="price">5.9 triệu/tháng <span class="price" style="padding-left: 15px;">#594093</span></p>
+                        <span class="beds">35m²</span>
+                        <!-- <span class="baths">#594093</span> -->
+                        <span class="sqft" style="color: #f69314;"><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i></span>
+                        <address>
+                            11 Nguyễn Xuân Khoát, Phường An Hải Bắc, Quận Sơn Trà, Đà Nẵng
+                        </address>
+                        
+                    </div>
+        </a>
+
+        <a href="#">
+          <img src="images/anh4.jpg" alt="Property 1" class="imgFill productImg"/>
+                    <div class="property-details">
+                        <p class="price">3.8 triệu/tháng <span class="price" style="padding-left: 15px;">#80204</span></p>
+                        <span class="beds">25m²</span>
+                        <!-- <span class="baths">4 baths</span> -->
+                        <span class="sqft" style="color: #f69314;"><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i></span>
+                        <address>
+                            Đường Lê Văn Hiến, Quận Ngũ Hành Sơn, Đà Nẵng
+                        </address>
+                        
+                    </div>
+        </a>
+
+        <a href="#">
+          <img src="images/anh1.jpg" alt="Property 1" class="imgFill productImg"/>
+                    <div class="property-details">
+                        <p class="price">3.2 triệu/tháng <span class="price" style="padding-left: 15px;">#600746</span></p>
+                        <span class="beds">25m²</span>
+                        <!-- <span class="baths">Có gác lửng</span> -->
+                        <span class="sqft" style="color: #f69314;"><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i></span>
+                        <address>
+                            02-04 Đa Mặn 5, Phường Khuê Mỹ, Quận Ngũ Hành Sơn, Đà Nẵng
+                        </address>
+                        
+                    </div>
+        </a>
+
+        <a href="#">
+          <img src="images/anh8.jpg" alt="Property 1" class="imgFill productImg"/>
+                    <div class="property-details">
+                        <p class="price">4 triệu/tháng <span class="price" style="padding-left: 15px;">#315362</span></p>
+                        <span class="beds">20m²</span>
+                        <!-- <span class="baths">4 baths</span> -->
+                        <span class="sqft" style="color: #f69314;"><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i></span>
+                        <address>
+                            110/24 Nguyễn Hữu Thọ, Phường Hòa Thuận Tây, Quận Hải Châu, Đà Nẵng
+                        </address>
+                        
+                    </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background: #333;
+  padding: 8rem 0;
+  color: #777;">
+    <div class="flex container">
+      <div class="footer-about">
+        <h5>Tại sao lại chọn TroDNPro.com?</h5>
+        <p>Chúng tôi biết bạn có rất nhiều lựa chọn, nhưng Phongtro123.com tự hào là trang web đứng top google về các từ khóa: cho thuê phòng trọ, nhà trọ, thuê nhà nguyên căn, cho thuê căn hộ, tìm người ở ghép, cho thuê mặt bằng...
+          Vì vậy tin của bạn đăng trên website sẽ tiếp cận được với nhiều khách hàng hơn, do đó giao dịch nhanh hơn, tiết kiệm chi phí hơn.</p>
+      </div>
+
+      <div class="footer-quick-links">
+        <h5>Đường dẫn</h5>
+        <ul>
+          <li><a href="aboutus.html">Về Chúng Tôi</a></li>
+          <li><a href="properties.html">Cho Thuê Phòng Trọ</a></li>
+          <li><a href="#">Chính Sách Bảo Mật</a></li>
+          <li><a href="contact.html">Liên Hệ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-subscribe">
+        <h5>Theo dõi bản tin của chúng tôi</h5>
+        <div id="subscribe-container">
+          <input type="text" placeholder="Nhập Email" />
+          <button class="right-rounded">Gửi</button>
+        </div>
+
+        <h5 class="follow-us">Theo dõi chúng tôi</h5>
+        <ul>
+          <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+          <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+          <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+          <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <small>
+      Copyright &copy; 2022 All rights reserved | TroDNPro.
+    </small>
+  </footer>
+</body>
+
+  <script src="js/script.js"></script>
+  <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDej-CHRaTCF5vaK9vkd8vty8Eo2Vv2Ids&callback=initMap&v=weekly"
+      defer
+  ></script>
+</html>
