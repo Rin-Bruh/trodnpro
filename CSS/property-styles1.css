@@ -1165,7 +1165,7 @@ footer small a:hover {
 .banner{
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('/images/two.jpg.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('https://img.meta.com.vn/Data/image/2020/11/24/mau-decor-trang-tri-phong-tro-sinh-vien-2.jpg');
   background-size: cover;
   background-position: center;
 }
