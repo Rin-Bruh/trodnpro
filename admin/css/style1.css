@@ -124,16 +124,25 @@ header{
     display: flex;
     align-items: center;
 }
-.social-icons span,
-.social-icons div{
-    margin-left: 74rem;
-}
 
+.social-icons div{
+    margin-left: 64rem;
+    
+}
+.social-icons span{
+  margin-left: 0.5rem;
+}
+.social-icons a{
+  margin-left: 1rem;
+}
+.social-icons span{
+  font-size: 1rem;
+  color: rgb(0, 79, 182);
+}
 .social-icons div {
   margin-top: 8px;
   height: 45px;
   width: 45px;
-  cursor: pointer;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm5UGRi0eFxZye7rot7gxCeKcUautT1eyYnw&usqp=CAU);
