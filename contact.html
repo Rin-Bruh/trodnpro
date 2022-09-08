@@ -48,18 +48,19 @@
         <div class="flex">
           <div id="form-container">
             <h3><b>Liên hệ trực tuyến</b></h3>
-            <form onsubmit="sendEmail(); reset(); return false;">
+            <form  action="https://formspree.io/f/mjvzgaen" method="POST">
               <label>Tên của bạn <span id="nc">*</span></label>
-              <input type="text" id="name" required />
-
+              <input type="text" name="name" id="name" required />
+              <!-- onsubmit="sendEmail(); reset(); return false;" -->
+              
               <label>Email <span id="nc">*</span></label>
-              <input type="email" id="email" required />
+              <input type="email" name="email" id="email" required />
 
               <label>Điện thoại</label>
-              <input type="text" id="subject" />
+              <input type="text" name="phone" id="subject" />
 
               <label>Nội dung liên hệ <span id="nc">*</span></label>
-              <textarea id="content" cols="30" rows="10" placeholder="Viết nội dung của bạn ở đây..."
+              <textarea id="content" cols="30" rows="10" name="message" placeholder="Viết nội dung của bạn ở đây..."
                 required></textarea>
 
               <button class="rounded" type="submit">Gửi liên hệ</button>
@@ -130,7 +131,7 @@
     </footer>
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
-    <script>
+    <!-- <script>
        function sendEmail() {
         Email.send({
           Host: "smtp.elasticemail.com",
@@ -145,7 +146,7 @@
           message => alert(message)
         );
       }
-    </script>
+    </script> -->
 </body>
 <script src="JS/script.js"></script>
 
