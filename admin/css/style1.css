@@ -126,15 +126,13 @@ header{
 }
 
 .social-icons div{
-    margin-left: 64rem;
+    margin-left: 69rem;
     
 }
 .social-icons span{
-  margin-left: 0.5rem;
+  margin-left: 1.5rem;
 }
-.social-icons a{
-  margin-left: 1rem;
-}
+
 .social-icons span{
   font-size: 1rem;
   color: rgb(0, 79, 182);
