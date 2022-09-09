@@ -259,18 +259,22 @@
             <input class="form-control" type="text" required value="" disabled>
           </div>
           <div class="form-group col-md-6">
-            <label class="control-label">Thuê phòng</label>
-            <input class="form-control" type="text" required value="">
-          </div>
-          
-          <div class="form-group col-md-12">
-            <label class="control-label">Hộ khẩu</label>
-            <input class="form-control" type="text" required value="">
-          </div>
-          
-          <div class="form-group col-md-6">
             <label class="control-label">Ngày sinh</label>
             <input class="form-control" type="date" value="">
+          </div>
+          
+          
+          <div class="form-group col-md-12">
+            <label class="control-label">Quê quán</label>
+            <input class="form-control" type="text" required value="">
+          </div>
+          <div class="form-group  col-md-6">
+            <label class="control-label">Số điện thoại</label>
+            <input class="form-control" type="number" required value="">
+          </div>
+          <div class="form-group  col-md-6">
+            <label class="control-label">Số CMNN/CCCD</label>
+            <input class="form-control" type="number" required value="">
           </div>
           <div class="form-group  col-md-6">
             <label for="exampleSelect1" class="control-label">Giới tính</label>
@@ -279,13 +283,29 @@
               <option>Nam</option>
             </select>
           </div>
-          <div class="form-group  col-md-6">
-            <label class="control-label">Số điện thoại</label>
-            <input class="form-control" type="number" required value="">
+          
+          <div class="form-group col-md-6">
+            <label class="control-label">Thuê phòng</label>
+            <input class="form-control" type="text" required value="">
           </div>
           <div class="form-group col-md-6">
             <label class="control-label">Giá thuê</label>
             <input class="form-control" type="text" required value="">
+          </div>
+          <div class="form-group col-md-12">
+            <label class="control-label">Ảnh 3x4 khách thuê</label>
+            <div id="myfileupload">
+              <input type="file" id="uploadfile" name="ImageUpload" onchange="readURL(this);" />
+            </div>
+            <div id="thumbbox">
+              <img height="450" width="400" alt="Thumb image" id="thumbimage" style="display: none" />
+              <a class="removeimg" href="javascript:"></a>
+            </div>
+            <div id="boxchoice">
+              <a href="javascript:" class="Choicefile"></a>
+              <p style="clear:both"></p>
+            </div>
+
           </div>
         </div>
         <BR>
